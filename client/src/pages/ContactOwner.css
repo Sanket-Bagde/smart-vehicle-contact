@@ -1,0 +1,180 @@
+.contact-page {
+  min-height: calc(100vh - 73px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px 20px;
+
+  background: #f5f7fb;
+}
+
+/* Card */
+
+.contact-card {
+  width: 100%;
+  max-width: 550px;
+
+  background: white;
+
+  padding: 40px;
+
+  border-radius: 18px;
+
+  text-align: center;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.09);
+}
+
+/* Icon */
+
+.contact-icon {
+  font-size: 52px;
+  margin-bottom: 10px;
+}
+
+/* Label */
+
+.contact-label {
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+/* Heading */
+
+.contact-card h1 {
+  margin: 12px 0;
+
+  color: #111827;
+
+  font-size: 30px;
+}
+
+/* Description */
+
+.contact-description {
+  color: #6b7280;
+
+  line-height: 1.7;
+
+  margin-bottom: 25px;
+}
+
+/* Privacy Box */
+
+.privacy-box {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 12px;
+
+  text-align: left;
+
+  background: #eff6ff;
+
+  border: 1px solid #bfdbfe;
+
+  padding: 16px;
+
+  border-radius: 10px;
+
+  margin-bottom: 25px;
+}
+
+.privacy-icon {
+  font-size: 22px;
+}
+
+.privacy-box strong {
+  color: #1e3a8a;
+}
+
+.privacy-box p {
+  margin: 5px 0 0;
+
+  color: #4b5563;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+/* Chat Button */
+
+.chat-button {
+  width: 100%;
+
+  border: none;
+
+  background: #2563eb;
+
+  color: white;
+
+  padding: 14px 20px;
+
+  border-radius: 9px;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.chat-button:hover {
+  background: #1d4ed8;
+
+  transform: translateY(-2px);
+}
+
+/* Back Button */
+
+.back-button {
+  width: 100%;
+
+  margin-top: 12px;
+
+  border: 1px solid #d1d5db;
+
+  background: white;
+
+  color: #374151;
+
+  padding: 12px 20px;
+
+  border-radius: 9px;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.back-button:hover {
+  background: #f9fafb;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .contact-card {
+    padding: 30px 20px;
+  }
+
+  .contact-card h1 {
+    font-size: 26px;
+  }
+}

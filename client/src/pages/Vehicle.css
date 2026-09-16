@@ -1,0 +1,227 @@
+.vehicle-page {
+  min-height: calc(100vh - 73px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 50px 20px;
+
+  background: #f5f7fb;
+}
+
+/* Vehicle Card */
+
+.vehicle-card {
+  width: 100%;
+  max-width: 550px;
+
+  background: white;
+
+  padding: 40px;
+
+  border-radius: 18px;
+
+  text-align: center;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon */
+
+.vehicle-icon {
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+/* Label */
+
+.vehicle-label {
+  margin: 0;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  color: #6b7280;
+}
+
+/* Heading */
+
+.vehicle-card h1 {
+  margin: 10px 0 30px;
+
+  font-size: 34px;
+
+  color: #111827;
+}
+
+/* Details */
+
+.vehicle-details {
+  border: 1px solid #e5e7eb;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  margin-bottom: 25px;
+}
+
+.detail-item {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 16px 18px;
+
+  text-align: left;
+}
+
+.detail-item + .detail-item {
+  border-top: 1px solid #e5e7eb;
+}
+
+.detail-label {
+  color: #6b7280;
+
+  font-size: 14px;
+}
+
+.detail-value {
+  color: #111827;
+
+  font-weight: 600;
+}
+
+/* Contact Information */
+
+.contact-info {
+  margin-bottom: 25px;
+}
+
+.contact-info h3 {
+  margin: 0 0 8px;
+
+  color: #111827;
+
+  font-size: 19px;
+}
+
+.contact-info p {
+  margin: 0;
+
+  color: #6b7280;
+
+  line-height: 1.6;
+}
+
+/* Contact Button */
+
+.contact-button {
+  width: 100%;
+
+  border: none;
+
+  background: #2563eb;
+
+  color: white;
+
+  padding: 14px 20px;
+
+  border-radius: 9px;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.contact-button:hover {
+  background: #1d4ed8;
+
+  transform: translateY(-2px);
+}
+
+/* Loading */
+
+.vehicle-loading {
+  text-align: center;
+
+  color: #4b5563;
+}
+
+/* Error */
+
+.vehicle-error {
+  max-width: 450px;
+
+  background: white;
+
+  padding: 40px;
+
+  border-radius: 16px;
+
+  text-align: center;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.vehicle-error-icon {
+  font-size: 50px;
+}
+
+.vehicle-error h2 {
+  color: #111827;
+}
+
+.vehicle-error p {
+  color: #6b7280;
+}
+
+/* Back Button */
+
+.back-button {
+  margin-top: 15px;
+
+  border: none;
+
+  background: #2563eb;
+
+  color: white;
+
+  padding: 11px 20px;
+
+  border-radius: 8px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background: #1d4ed8;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .vehicle-card {
+    padding: 30px 20px;
+  }
+
+  .vehicle-card h1 {
+    font-size: 28px;
+  }
+
+  .detail-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}

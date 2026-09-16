@@ -1,0 +1,243 @@
+.dashboard-page {
+  min-height: calc(100vh - 73px);
+  padding: 45px 20px 60px;
+  background: #f5f7fb;
+}
+
+/* Header */
+
+.dashboard-header {
+  max-width: 1100px;
+  margin: 0 auto 35px;
+  text-align: center;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  font-size: 38px;
+  color: #111827;
+}
+
+.dashboard-header p {
+  margin-top: 10px;
+  color: #6b7280;
+  font-size: 17px;
+}
+
+/* Vehicles */
+
+.vehicles-container {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Vehicle Card */
+
+.vehicle-card {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+/* Vehicle Information */
+
+.vehicle-info h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-size: 27px;
+  color: #111827;
+}
+
+.vehicle-info p {
+  color: #4b5563;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.vehicle-info strong {
+  color: #111827;
+}
+
+/* View Vehicle */
+
+.view-button {
+  margin-top: 20px;
+
+  border: none;
+  background: #2563eb;
+  color: white;
+
+  padding: 11px 18px;
+  border-radius: 8px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.view-button:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+/* QR Section */
+
+.qr-section {
+  text-align: center;
+}
+
+.qr-section h3 {
+  margin-top: 0;
+  color: #111827;
+  font-size: 20px;
+}
+
+.qr-box {
+  display: inline-flex;
+
+  padding: 15px;
+
+  background: white;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+}
+
+.qr-help {
+  color: #6b7280;
+  font-size: 14px;
+
+  max-width: 280px;
+  margin: 12px auto 0;
+}
+
+/* Messages */
+
+.messages-section {
+  grid-column: 1 / -1;
+
+  border-top: 1px solid #e5e7eb;
+  padding-top: 22px;
+}
+
+.messages-button {
+  border: none;
+
+  background: #111827;
+  color: white;
+
+  padding: 11px 18px;
+  border-radius: 8px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.messages-button:hover {
+  background: #1f2937;
+}
+
+/* Messages Container */
+
+.messages-container {
+  margin-top: 20px;
+
+  background: #f9fafb;
+
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.messages-container h3 {
+  margin-top: 0;
+  color: #111827;
+}
+
+.no-messages {
+  color: #6b7280;
+}
+
+/* Individual Message */
+
+.dashboard-message {
+  background: white;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+
+  padding: 14px 16px;
+  margin-bottom: 10px;
+}
+
+.dashboard-message p {
+  margin: 0 0 8px;
+
+  color: #111827;
+  line-height: 1.5;
+}
+
+.dashboard-message small {
+  color: #6b7280;
+}
+
+/* Empty State */
+
+.empty-state {
+  max-width: 500px;
+  margin: 80px auto;
+
+  text-align: center;
+
+  background: white;
+
+  padding: 45px 25px;
+
+  border-radius: 16px;
+
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.empty-icon {
+  font-size: 50px;
+}
+
+.empty-state h2 {
+  color: #111827;
+  margin: 15px 0 8px;
+}
+
+.empty-state p {
+  color: #6b7280;
+}
+
+/* Responsive */
+
+@media (max-width: 750px) {
+  .vehicle-card {
+    grid-template-columns: 1fr;
+  }
+
+  .messages-section {
+    grid-column: auto;
+  }
+
+  .dashboard-header h1 {
+    font-size: 32px;
+  }
+}
